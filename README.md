@@ -26,3 +26,12 @@ dotnet run
 ```
 
 Choose a task from the menu and follow the prompts.
+
+## Exercise 3 as a separate program
+
+The grade-average task is also available separately, without the task menu:
+
+- Python: `python python/task3/grade_average.py`
+- C#: create a console project with `dotnet new console -n GradeAverage`, replace its `Program.cs` with `csharp/task3/Program.cs`, then run `dotnet run` from the project folder.
+
+Enter the number of grades, then each grade from 1 to 6. The program prints the average and whether the student passed (average at least 3.0).
