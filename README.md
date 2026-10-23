@@ -1,37 +1,32 @@
-# Programming Exercises: Python and C#
+# Python and C# Console Exercises
 
-Console applications for three beginner programming exercises:
+Each task is a separate console program in both languages.
 
-1. Two-number calculator (`+`, `-`, `*`, `/`)
-2. Celsius/Fahrenheit converter
-3. Student grade average and pass/fail check (pass threshold: 3.0)
+| Task | Python | C# |
+|---|---|---|
+| 1. Calculator | `python/task1/calculator.py` | `csharp/task1/Program.cs` |
+| 2. Temperature converter | `python/task2/temperature_converter.py` | `csharp/task2/Program.cs` |
+| 3. Grade average | `python/task3/grade_average.py` | `csharp/task3/Program.cs` |
 
-## Python
+## Run Python programs
 
-Run from the repository root:
+From this repository's root, run the file for the task you want. For example:
 
 ```bash
-python python/main.py
+python python/task1/calculator.py
+python python/task2/temperature_converter.py
+python python/task3/grade_average.py
 ```
 
-## C#
+## Run a C# program
 
-Create a console project, replace its `Program.cs` with `csharp/Program.cs`, then run:
+Each C# file is the `Program.cs` for a console project. Create a project for the task, replace its `Program.cs` with the corresponding file above, and run it. For example:
 
 ```bash
-dotnet new console -n Exercises
-# Copy csharp/Program.cs over Exercises/Program.cs
-cd Exercises
+dotnet new console -n Task1Calculator
+# Copy csharp/task1/Program.cs to Task1Calculator/Program.cs
+cd Task1Calculator
 dotnet run
 ```
 
-Choose a task from the menu and follow the prompts.
-
-## Exercise 3 as a separate program
-
-The grade-average task is also available separately, without the task menu:
-
-- Python: `python python/task3/grade_average.py`
-- C#: create a console project with `dotnet new console -n GradeAverage`, replace its `Program.cs` with `csharp/task3/Program.cs`, then run `dotnet run` from the project folder.
-
-Enter the number of grades, then each grade from 1 to 6. The program prints the average and whether the student passed (average at least 3.0).
+Repeat with a new console project and the matching `csharp/task2/Program.cs` or `csharp/task3/Program.cs` for the other tasks.

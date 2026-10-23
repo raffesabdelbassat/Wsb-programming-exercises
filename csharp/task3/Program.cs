@@ -22,6 +22,9 @@ class GradeAverage
 
         double average = total / count;
         Console.WriteLine($"Average: {average:F2}");
-        Console.WriteLine(average >= 3.0 ? "Student passed." : "Student failed.");
+        if (average >= 3.0)
+            Console.WriteLine("Student passed.");
+        else
+            Console.WriteLine("Student failed.");
     }
 }
